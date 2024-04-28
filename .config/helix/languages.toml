@@ -1,0 +1,29 @@
+[language-server.nimlsp]
+command = "nimlsp"
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+config = {}
+
+[language-server.gopls]
+command = "gopls"
+config = { buildFlags = [ "-tags=integration" ], "ui.Diagnostic.analyses" = { unusedparams = true, deprecated = true }, "ui.Inlayhint.hints" = { constantValues = true } }
+
+[[language]]
+name = "go"
+roots = [ "go.work", "go.mod", ".git" ]
+formatter = { command = "goimports" }
+language-servers = [ "gopls" ]
+
+[[language]]
+name = "nim"
+formatter = { command = "nimpretty", args = ["--indent:2"] }
+indent = { tab-width = 2, unit = "  " }
+language-servers = [ "nimlsp" ]
+
+[[language]]
+name = "python"
+roots = [ "Pipfile" ]
+language-servers = [ "pyright" ]
+

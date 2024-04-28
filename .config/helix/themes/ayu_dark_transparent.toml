@@ -1,0 +1,4 @@
+inherits = "ayu_dark"
+
+"ui.background" = { fg = "foreground" }
+

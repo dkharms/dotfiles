@@ -1,0 +1,49 @@
+theme = "github_dark_transparent"
+
+[editor] # https://docs.helix-editor.com/configuration.html#editor-section
+shell = ["zsh", "-c"]
+mouse = true
+
+line-number = "relative"
+cursorline = true
+
+true-color = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "block"
+
+[editor.file-picker]
+hidden = false
+git-ignore = false
+
+[editor.statusline]
+left = ["mode", "separator", "file-name", "file-modification-indicator", "spinner"]
+right = ["diagnostics", "selections", "position", "file-type"]
+separator = "∆"
+
+mode.normal = "🌛 NORMAL"
+mode.insert = "🌝 INSERT"
+mode.select = "🌜 SELECT"
+
+[keys.normal]
+"{" = ["goto_prev_paragraph", "collapse_selection"]
+"}" = ["goto_next_paragraph", "collapse_selection"]
+"V" = ["select_mode", "extend_to_line_bounds"]
+"g" = { "b" = "jump_backward" }
+
+[keys.insert]
+j = { k = "normal_mode" }
+
+[keys.select]
+"{" = ["goto_prev_paragraph", "extend_to_line_bounds"]
+"}" = ["goto_next_paragraph", "extend_to_line_bounds"]
+k = ["extend_line_up", "extend_to_line_bounds"]
+j = ["extend_line_down", "extend_to_line_bounds"]

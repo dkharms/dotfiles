@@ -1,0 +1,4 @@
+inherits = "github_dark"
+
+"ui.background" = { fg = "foreground" }
+

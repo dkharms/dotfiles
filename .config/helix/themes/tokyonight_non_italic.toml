@@ -1,0 +1,9 @@
+inherits = "tokyonight"
+
+"comment" = { fg = "comment", "comment" = { fg = "comment" } }
+"function" = { fg = "blue" }
+"keyword" = { fg = "cyan" }
+"keyword.function" = { fg = "magenta" }
+"variable.parameter" = { fg = "yellow" }
+"markup.italic" = { fg = "yellow" }
+"markup.quote" = { fg = "yellow" }
