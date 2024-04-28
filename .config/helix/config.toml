@@ -1,4 +1,4 @@
-theme = "github_dark_transparent"
+theme = "ayu_dark_transparent"
 
 [editor] # https://docs.helix-editor.com/configuration.html#editor-section
 shell = ["zsh", "-c"]
