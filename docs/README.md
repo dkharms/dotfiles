@@ -2,7 +2,7 @@
 
 ### Preview
 
-![dkharms-preview](https://github.com/dkharms/.dotfiles/assets/29202384/ef4f8199-385b-48f4-b317-abf153188be8)
+![dkharms-preview](https://github.com/dkharms/.dotfiles/assets/29202384/c7c0d922-1dcf-40c9-829c-4510cb6eaaaf)
 
 <p align="center">❗<strong>Following sections are outdated. Bootstrapping process is coming</strong>❗</p>
 
