@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+for file in $(fd . "$HOME/functions" --type file --exclude 'init'); do source $file; done;
