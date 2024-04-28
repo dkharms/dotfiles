@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source $(pwd)/utils
+source $(pwd)/oh-my-zsh
+source $(pwd)/brew
+

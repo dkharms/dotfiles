@@ -1,0 +1,8 @@
+#!/bin/bash
+
+log() {
+  jq \
+    -nc \
+    --arg msg "$1" \
+    '{ "timestamp": (now | strftime("%Y-%m-%d %H:%M:%S")), "message": $msg }'
+}
