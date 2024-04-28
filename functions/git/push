@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-# gpb pushes current branch to remote origin
+# gpb pushes current (or specified) branch to remote origin
 function gpb {
-  git push origin $(git branch --show-current)
+  branch=$1:-$(git branch --show-current)
+  git push origin $branch
 }
