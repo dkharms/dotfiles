@@ -2,9 +2,9 @@
 
 ### Preview
 
-![Screenshot 2023-09-08 at 09 36 49](https://github.com/dkharms/.dotfiles/assets/29202384/d01986e9-188b-4140-b375-403c1037ff5b)
+![dkharms-preview](https://github.com/dkharms/.dotfiles/assets/29202384/ef4f8199-385b-48f4-b317-abf153188be8)
 
-> ❗ Following section are outdated. Bootstrapping process is coming.
+<p align="center">❗<strong>Following sections are outdated. Bootstrapping process is coming</strong>❗</p>
 
 ### Prerequisites
 
