@@ -1,0 +1,21 @@
+[commit]
+    template = ~/.commitmessage
+[core]
+    editor = hx
+    pager = delta
+[user]
+	email = dporokhnin@ozon.ru
+	name = Daniil Porokhnin
+
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
+    dark = true
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
+
+[url "git@gitlab.ozon.ru:"]
+    insteadOf = https://gitlab.ozon.ru/
