@@ -1,0 +1,10 @@
+
+
+
+# Commit format MUST follow this template:
+#
+# <type>(<scope>): <subject>
+# <BLANK LINE>
+# <body>
+# <BLANK LINE>
+# <footer>
