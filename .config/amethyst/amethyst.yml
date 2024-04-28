@@ -1,0 +1,26 @@
+# Amethyst configuration file.
+# More info: https://github.com/ianyh/Amethyst/blob/development/docs/configuration-files.md
+
+layouts:
+  # - tall
+  - fullscreen
+  # - tall-right
+  # - wide
+  - two-pane
+  # - middle-wide
+  # - 3column-left
+  # - middle-wide # The legacy name of "3column-middle"
+  # - 3column-right
+  # - 4column-left
+  # - 4column-right
+  # - column
+  # - row
+  # - floating
+  # - widescreen-tall
+  # - widescreen-tall-right
+  # - bsp
+  
+window-margins: true
+window-margin-size: 15
+
+enables-layout-hud-on-space-change: false
