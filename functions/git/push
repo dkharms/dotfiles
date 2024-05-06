@@ -2,6 +2,6 @@
 
 # gpb pushes current (or specified) branch to remote origin
 function gpb {
-  branch=$1:-$(git branch --show-current)
+  branch=${1:-$(git branch --show-current)}
   git push origin $branch
 }
