@@ -15,7 +15,7 @@ if [ "$system_type" = "Darwin" ]; then
     echo "Updating homebrew bundle"
 
     # keep in sync with .zshrc
-    HOMEBREW_BUNDLE_FILE_GLOBAL="$HOME/.config/brew/Brewfile"
+    export HOMEBREW_BUNDLE_FILE_GLOBAL="$HOME/.config/brew/Brewfile"
 
     brew bundle --global
   fi

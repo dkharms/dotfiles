@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source $(pwd)/utils
-source $(pwd)/oh-my-zsh
-source $(pwd)/brew
-
+source ${HOME}/.config/yadm/utils
+source ${HOME}/.config/yadm/oh-my-zsh
+source ${HOME}/.config/yadm/brew
