@@ -20,6 +20,7 @@ Make sure that on your local machine installed following tools:
 
 Just run this command in your terminal:
 ```bash
+git clone https://github.com/dkharms/dotfiles.git ~
 yadm bootstrap
 ```
 
