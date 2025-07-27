@@ -6,15 +6,37 @@ command = "pyright-langserver"
 args = ["--stdio"]
 config = {}
 
+[language-server.zls]
+config.enable_build_on_save = true
+
 [language-server.gopls]
 command = "gopls"
 config = { buildFlags = [ "-tags=integration" ], "ui.Diagnostic.analyses" = { unusedparams = true, deprecated = true }, "ui.Inlayhint.hints" = { constantValues = true } }
+
+[language-server.protols]
+command = "protols"
+args = [ "--include-paths", "/usr/local/include,./vendorpb" ]
+
+[language-server.jsonnet-language-server]
+command = "jsonnet-language-server"
+args = [ "-J", "./libs/", "-J", "./vendor/"]
+
+[language-server.yaml-language-server]
+file-types = ["yaml", "yml"]
+
+[language-server.yaml-language-server.config.yaml.schemas]
+"https://json.schemastore.org/github-workflow.json" = ".github/workflows/*.{yml,yaml}"
+"https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible-tasks.json" = "roles/{tasks,handlers}/*.{yml,yaml}"
 
 [[language]]
 name = "go"
 roots = [ "go.work", "go.mod", ".git" ]
 formatter = { command = "goimports" }
 language-servers = [ "gopls" ]
+
+[[language]]
+name = "protobuf"
+language-servers = [ "protols" ]
 
 [[language]]
 name = "nim"
@@ -26,4 +48,3 @@ language-servers = [ "nimlsp" ]
 name = "python"
 roots = [ "Pipfile" ]
 language-servers = [ "pyright" ]
-

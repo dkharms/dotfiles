@@ -5,3 +5,9 @@ function gpb {
   branch=${1:-$(git branch --show-current)}
   git push origin $branch
 }
+
+# gpbf pushes current (or specified) branch to remote origin with --force
+function gpbf {
+  branch=${1:-$(git branch --show-current)}
+  git push origin --force $branch
+}

@@ -4,7 +4,7 @@
     editor = hx
     pager = delta
 [user]
-	email = dporokhnin@ozon.ru
+	email = dkharmsd@gmail.com
 	name = Daniil Porokhnin
 
 [interactive]
@@ -16,6 +16,3 @@
     conflictstyle = diff3
 [diff]
     colorMoved = default
-
-[url "git@gitlab.ozon.ru:"]
-    insteadOf = https://gitlab.ozon.ru/
